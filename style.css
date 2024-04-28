@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background:rgb(208, 237, 255);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgb(93, 93, 241);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+     
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .edit-btn {
+    background-color: #ff9800;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e68a00;
+  }
+
+.completed {
+    text-decoration: line-through; /* Add a line-through decoration for completed tasks */
+    color: #888; /* Change the color to a muted gray for completed tasks */
+}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #task-input {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    #task-input {
+        width: 50%;
+    }
+}
+
